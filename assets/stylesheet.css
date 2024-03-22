@@ -5,7 +5,7 @@
     --green: #27ae60;
     --black: #192a56;
     --light-color: #666;
-    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.1)
+    --box-shadow: 0rem .5rem 1.5rem rgba(0,0,0,0.1)
 }
 
 * {
@@ -28,4 +28,60 @@ html {
 
 ul {
     list-style: none;
+}
+
+header {
+    position: fixed;
+    left: 0; right: 0;
+    background-color: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i {
+    color: var(--green);
+    padding: 0 1rem;
+}
+
+header nav a {
+    font-size: 1.7rem;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    color: var(--light-color);
+}
+
+header nav a.active,
+header nav a:hover {
+    color: #fff;
+    background-color: var(--green);
+}
+
+header .icons i,
+header .icons a {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+    color: #fff;
+    background-color: var(--green);
 }
