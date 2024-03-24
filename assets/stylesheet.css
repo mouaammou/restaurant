@@ -90,6 +90,66 @@ header #menu-bars {
     display: none;
 }
 
+#search-form {
+    position: fixed;
+    top: -100%; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1004;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-form.active {
+    top: 0;
+}
+
+#search-form #search-box {
+    width: 50rem;
+    border-bottom: .1rem solid #fff;
+    padding: 1rem 0;
+    text-transform: none;
+    color: #fff;
+    background: none;
+    font-size: 3rem;
+}
+
+#search-form #search-box::placeholder {
+    color: #aaa;
+}
+
+#search-form #search-box::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+#search-form label {
+    font-size: 3rem;
+    padding: 0 2rem;
+    color: #eee;
+    cursor: pointer;
+    transition: none;
+}
+
+#search-form label:hover {
+    color: var(--green);
+}
+
+#search-form #close {
+    position: absolute;
+    top: 0; right: 0;
+    font-size: 5rem;
+    color: #fff;
+    z-index: 1000;
+    padding: 2rem 3rem;
+    cursor: pointer;
+    transition: none;
+}
+
+#search-form #close:hover {
+    color: var(--green);
+}
 /* media queries */
 
 @media (max-width: 1200px)
