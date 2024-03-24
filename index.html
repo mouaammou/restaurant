@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Website</title>
 
+    <!-- swiper cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
@@ -42,52 +45,56 @@
 
         <!-- home section starts -->
         <section id="home" class="home">
-            <div class="home-slider">
-                <div class="wrapper">
+            <div class="swiper home-slider">
+                <div class="swiper-wrapper wrapper">
 
-                    <div class="slide">
+                    <div class="swiper-slide slide">
                         <div class="content">
                             <span>our special dish</span>
                             <h3>spicy noodles</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque porro deleniti!</p>
-                            <a href="" class="btn"></a>
+                             <a href="" class="btn">order now</a>
                         </div>
                         <div class="image">
                             <img src="assets/images/spicy-spgitty.jpg" alt="spicy noodles">
                         </div>
                     </div>
 
-                    <div class="slide">
+                    <div class="swiper-slide slide">
                         <div class="content">
                             <span>our special dish</span>
                             <h3>fried chicken</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque porro deleniti!</p>
-                            <a href="" class="btn"></a>
+                            <a href="" class="btn">order now</a>
                         </div>
                         <div class="image">
                             <img src="assets/images/fried-checken.jpg" alt="spicy noodles">
                         </div>
                     </div>
 
-                    <div class="slide">
+                    <div class="swiper-slide slide">
                         <div class="content">
-                            <span>hot pizza</span>
-                            <h3>fried chicken</h3>
+                            <span>our special dish</span>
+                            <h3>hot pizza</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque porro deleniti!</p>
-                            <a href="" class="btn"></a>
+                             <a href="" class="btn">order now</a>
                         </div>
                         <div class="image">
                             <img src="assets/images/hot-pizza.jpg" alt="spicy noodles">
                         </div>
                     </div>
                 </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <!-- home section ends -->
     </main>
     <!-- main content ends -->
 
-
+    <!-- swiper cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- custom js file -->
     <script src="assets/main.js"></script>
 </body>

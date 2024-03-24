@@ -38,6 +38,25 @@ section:nth-child(even){
     background-color: #eee;
 }
 
+.btn {
+    background-color: var(--black);
+    color: #fff;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 1px solid #eee;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: var(--black);
+    border: 1px solid var(--black);
+    font-weight: bold;
+}
+
 img {
     width: 100%;
 }
@@ -163,9 +182,15 @@ header #menu-bars {
     color: var(--green);
 }
 
+
+.home .home-slider{
+    width: 100%;
+    height: 80rem
+}
+
 .home .home-slider .slide {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
@@ -214,18 +239,34 @@ header #menu-bars {
 @media (max-width: 1400px) {
 
     .home .home-slider .slide img {
-        width: 54rem;
+        width: 60rem;
         height: 48rem;
     }
+
 }
 
-@media (max-width: 1200px)
+@media (max-width: 1260px)
 {
     html {
         font-size: 57%;
     }
+
     .home .home-slider .slide {
         justify-content: center;
+        align-content: center;
+    }
+
+    .home .home-slider .slide .image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home .home-slider {
+        height: 105rem
+    }
+
+    .home .home-slider .slide .content {
+        width: 60rem;
     }
 }
 
@@ -238,6 +279,7 @@ header #menu-bars {
     header {
         padding: 1rem 2rem;
     }
+
 }
 
 @media (max-width: 768px)
@@ -245,7 +287,7 @@ header #menu-bars {
     header .icons #menu-bars {
         display: inline-block;
     }
-
+    
     header nav {
         position: absolute;
         top: 100%; left: 0;
@@ -256,11 +298,11 @@ header #menu-bars {
         padding: 1rem;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
-
+    
     header nav.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
-
+    
     header nav a {
         display: block;
         padding: 1.5rem;
@@ -268,5 +310,20 @@ header #menu-bars {
         font-size: 2rem;
         background-color: #eee;
         text-align: center;
+    }
+    
+    .home .home-slider .slide .content {
+        width: 100%;
+    }
+    .home .home-slider .slide .image {
+        width: 100%;
+        overflow: hidden;
+    }
+    .home .home-slider .slide img {
+        width: 100%;
+        overflow: hidden;
+    }
+    .home .home-slider .slide:hover img {
+        transform: scale(1.1);
     }
 }

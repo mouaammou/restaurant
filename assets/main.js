@@ -24,3 +24,19 @@ document.getElementById("close").onclick = () => {
 document.getElementById("search-bar").onclick = () => {
     document.querySelector('#search-form').classList.toggle("active")
 }
+
+//swiper script 
+
+var swiper = new Swiper(".home-slider", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 8000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    loop: true,
+});
