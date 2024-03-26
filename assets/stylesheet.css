@@ -224,12 +224,104 @@ header #menu-bars {
     color: var(--light-color);
 }
 
+#dishes .sub-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--green);
+    padding: 0 1rem;
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
 
+#dishes .heading {
+    text-align: center;
+    font-size: 5rem;
+    padding-bottom: 2rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
 
+#dishes .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 
+}
 
+#dishes .box-container .box {
+    padding: 2.5rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 45rem;
+    height: 100%;
+}
 
+#dishes .box-container .box .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
+#dishes .box-container .box .image:hover img {
+    transform: scale(1.1);
+}
+
+#dishes .box-container .box .fa-heart,
+#dishes .box-container .box .fa-eye {
+    position: absolute;
+    top: 0;
+    width: 5rem;
+    z-index: 1000;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--black);
+    background-color: #fff;
+    border-radius: 50%;
+    right: 100rem;
+}
+
+#dishes .box-container .box .fa-eye {
+    left: -100rem;
+}
+
+#dishes .box-container .box:hover .fa-heart {
+    right: 1.5rem;
+}
+
+#dishes .box-container .box:hover .fa-eye {
+    left: 1.5rem;
+}
+
+#dishes .box-container .box img {
+    object-fit: cover;
+    width: 100%;
+    height: 40rem;
+}
+
+#dishes .box-container .box h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+    padding: 2.5rem auto;
+}
+
+#dishes .box-container .box .stars {
+    color: var(--green);
+    font-size: 1.5rem;
+}
+
+#dishes .box-container .box span {
+    font-size: 2.7rem;
+    color: var(--green);
+    padding: 0 2rem;
+    font-weight: bolder;
+}
 
 
 
@@ -242,7 +334,6 @@ header #menu-bars {
         width: 60rem;
         height: 48rem;
     }
-
 }
 
 @media (max-width: 1260px)
@@ -280,6 +371,7 @@ header #menu-bars {
         padding: 1rem 2rem;
     }
 
+    
 }
 
 @media (max-width: 768px)
@@ -325,5 +417,8 @@ header #menu-bars {
     }
     .home .home-slider .slide:hover img {
         transform: scale(1.1);
+    }
+    #dishes .box-container .box {
+        width: 100%;
     }
 }
