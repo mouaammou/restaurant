@@ -21,7 +21,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 55%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -224,7 +224,7 @@ header #menu-bars {
     color: var(--light-color);
 }
 
-#dishes .sub-heading {
+.sub-heading {
     text-align: center;
     font-size: 2.5rem;
     color: var(--green);
@@ -233,7 +233,7 @@ header #menu-bars {
     margin-top: 3rem;
 }
 
-#dishes .heading {
+.heading {
     text-align: center;
     font-size: 5rem;
     padding-bottom: 2rem;
@@ -277,7 +277,7 @@ header #menu-bars {
     position: absolute;
     top: 0;
     width: 5rem;
-    z-index: 1000;
+    z-index: 10;
     height: 5rem;
     line-height: 5rem;
     font-size: 2rem;
@@ -323,9 +323,77 @@ header #menu-bars {
     font-weight: bolder;
 }
 
+#about .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 1rem;
+}
 
+#about .row .image {
+    flex: 1 1 40rem;
+    padding: 0 2rem;
+    text-align: center;
+    margin: 2rem;
+}
 
+#about .row .image img {
+    width: 60rem;
+    height: 55rem;
+    object-fit: cover;
+    border-radius: 10%;
+}
 
+#about .row .content {
+    flex: 1 1 40rem;
+    padding: 0 2rem;
+}
+
+#about .row .content h3 {
+    font-size: 4rem;
+    color: var(--black);
+    margin: 2rem 1rem;
+
+}
+
+#about .row .content p {
+    font-size: 1.7rem;
+    color: var(--light-color);
+
+}
+#about .row .content .icons-container {
+    display: flex;
+    padding: 2rem 1rem;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#about .row .content .icons-container .icons {
+    background-color: #fff;
+    padding: 2rem 1rem;
+    margin: 1rem .3rem;
+    border-radius: 1rem;
+}
+
+#about .row .content .icons-container .icons i {
+    font-size: 2rem;
+    color: var(--green);
+    padding-right: 1.2rem;
+}
+
+#about .row .content .icons-container .icons span {
+    font-size: 2rem;
+}
+
+#about .row .content .icons-container .icons:hover,
+#about .row .content .icons-container .icons:hover i{
+    color: #fff;
+    background-color: var(--green);
+}
 
 /* media queries */
 @media (max-width: 1400px) {
@@ -339,7 +407,7 @@ header #menu-bars {
 @media (max-width: 1260px)
 {
     html {
-        font-size: 57%;
+        font-size: 55%;
     }
 
     .home .home-slider .slide {
