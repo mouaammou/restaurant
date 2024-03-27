@@ -340,10 +340,10 @@ header #menu-bars {
 }
 
 #about .row .image img {
-    width: 60rem;
-    height: 55rem;
+    width: 80rem;
+    height: 70rem;
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 4px;
 }
 
 #about .row .content {
@@ -369,14 +369,17 @@ header #menu-bars {
     align-items: center;
     justify-content: start;
     flex-wrap: wrap;
-    width: 100%;
+    flex: 1 1 17rem;
+    gap: 1.5rem;
 }
 
 #about .row .content .icons-container .icons {
     background-color: #fff;
     padding: 2rem 1rem;
-    margin: 1rem .3rem;
     border-radius: 1rem;
+    border: 1px solid var(--light-color);
+    flex: 1 1 24rem;
+    text-align: center;
 }
 
 #about .row .content .icons-container .icons i {
@@ -487,6 +490,15 @@ header #menu-bars {
         transform: scale(1.1);
     }
     #dishes .box-container .box {
+        width: 100%;
+    }
+
+    #about .row .image ,
+    #about .row .content {
+        flex-basis:  1 1 100%;
+    }
+
+    #about .row .image img {
         width: 100%;
     }
 }
